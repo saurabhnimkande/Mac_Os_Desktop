@@ -1,0 +1,18 @@
+#docItems {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: rgba(95, 95, 95, 0.288);
+  backdrop-filter: saturate(90%) blur(10px);
+  border-radius: 15px;
+  z-index: 4;
+}
+#docItems > div > img {
+  width: 60px;
+  cursor: default;
+}

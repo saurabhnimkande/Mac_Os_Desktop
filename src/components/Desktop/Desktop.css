@@ -3,4 +3,14 @@
   width: 100%;
   background-size: cover;
   height: 100vh;
+  display: grid;
+  grid-template-rows: 4vh 96vh;
+  overflow: hidden;
+}
+
+#docsIcons {
+  height: 100px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0px;
 }
