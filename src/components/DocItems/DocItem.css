@@ -11,8 +11,19 @@
   backdrop-filter: saturate(90%) blur(10px);
   border-radius: 15px;
   z-index: 4;
+  height: 70px;
 }
 #docItems > div > img {
   width: 60px;
   cursor: default;
+  position: relative;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+}
+#docItems > div > img:hover {
+  width: 70px;
+  position: relative;
+  transform: translate(0px, -5px);
+  transition: 0.3s;
+  transition-timing-function: ease-out;
 }
