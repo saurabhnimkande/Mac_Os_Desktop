@@ -1,6 +1,6 @@
 #docItems {
   display: flex;
-  width: 80%;
+  width: 1200px;
   margin: auto;
   justify-content: space-around;
   padding-left: 10px;
@@ -19,6 +19,10 @@
   position: relative;
   transition: 0.3s;
   transition-timing-function: ease-out;
+  cursor: not-allowed;
+}
+#docItems > div:nth-child(14) > img {
+  cursor: default;
 }
 #docItems > div > img:hover {
   width: 70px;

@@ -1,6 +1,9 @@
 import "./DocItem.css";
+import { useContext } from "react";
 import { Tooltip } from "antd";
+import { AppContext } from "../Context/AppContext";
 export const DocItem = () => {
+  const { openCalc } = useContext(AppContext);
   return (
     <div id="docItems">
       <div>
@@ -68,7 +71,7 @@ export const DocItem = () => {
           <img src="icons/music.png" alt="music"></img>
         </Tooltip>
       </div>
-      <div>
+      <div onClick={openCalc}>
         <Tooltip title="Calculator" color={"rgba(7, 7, 7, 0.49)"}>
           <img src="icons/calculator.png" alt="calculator"></img>
         </Tooltip>

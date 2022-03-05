@@ -1,4 +1,4 @@
-#header {
+.header {
   padding-left: 10px;
   box-sizing: border-box;
   background-color: "green";
@@ -10,21 +10,36 @@
   cursor: default;
   display: flex;
 }
-#header > div:nth-child(4) {
+.header > div:nth-child(4) {
   margin-left: 10px;
 }
-#header > div > p {
+.header > div > p {
   padding-bottom: 2px;
 }
-#header > div > img {
+.header > div > img {
   width: 25px;
 }
 .desktopIcons {
   width: 100px;
   text-align: center;
   cursor: default;
+  padding: 5px;
+  position: fixed;
+  right: 0;
 }
 .desktopIcons > p {
   margin: 0;
   padding: 0;
+}
+.box {
+  width: 900px;
+  height: 650px;
+  position: fixed;
+  overflow: hidden;
+}
+#jiosaavanIcon {
+  top: 120px;
+}
+#vscodeIcon {
+  top: 200px;
 }

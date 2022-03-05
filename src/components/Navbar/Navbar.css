@@ -1,35 +1,42 @@
 #navbarDiv {
   display: flex;
-  gap: 15px;
   background: rgba(173, 173, 173, 0.507);
   backdrop-filter: saturate(180%) blur(18px);
   height: 28px;
+  width: 100vw;
 }
 #navbarDiv > div {
-  padding-top: 1.5px;
-  cursor: pointer;
+  cursor: not-allowed;
   box-sizing: border-box;
+  display: flex;
+  width: 50%;
+  gap: 15px;
 }
-#navbarDiv > div:nth-child(1) {
+#navbarDiv > div:nth-child(2) {
+  padding-top: 1.5px;
+  justify-content: end;
+  padding-right: 15px;
+}
+#navbarDiv > div:nth-child(1) > div:nth-child(1) {
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 0px;
   padding-left: 15px;
 }
-#navbarDiv > div:nth-child(2) > p {
+#navbarDiv > div:nth-child(1) > div {
+  padding-top: 1.5px;
+}
+#navbarDiv > div:nth-child(1) > div:nth-child(2) > p {
   font-weight: 600;
 }
-#navbarDiv > div:nth-child(1) > img {
+#navbarDiv > div:nth-child(1) > div:nth-child(1) > img {
   width: 18px;
 }
-#navbarDiv > div:nth-child(9) {
-  margin-left: 44%;
-}
-#navbarDiv > div:nth-child(9) > img {
+#navbarDiv > div:nth-child(2) > div:nth-child(1) > img {
   width: 22px;
 }
-#navbarDiv > div:nth-child(10) > img {
+#navbarDiv > div:nth-child(2) > div:nth-child(2) > img {
   width: 18px;
 }
-#navbarDiv > div:nth-child(11) > img {
+#navbarDiv > div:nth-child(2) > div:nth-child(3) > img {
   width: 15px;
 }
