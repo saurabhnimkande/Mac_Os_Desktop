@@ -36,11 +36,11 @@ export const DesktopArea = () => {
           onDoubleClick={() => setJioSaavn(!jioSaavn)}
         >
           <img
-            src="icons/JioSaavnLogo.png"
-            alt="jiosaavan"
+            src="icons/thehindu.png"
+            alt="theHindu"
             style={{ width: "50px", borderRadius: "10px" }}
           ></img>
-          <p>Jio Saavn</p>
+          <p>The Hindu</p>
         </div>
       </Draggable>
 
@@ -104,13 +104,13 @@ export const DesktopArea = () => {
                 <img src="icons/minimize.png" alt="minimize"></img>
               </div>
               <div>
-                <p>Jio Saavn</p>
+                <p>The Hindu</p>
               </div>
             </header>
             <div>
               <object
                 type="text/html"
-                data="https://www.jiosaavn.com/"
+                data="https://www.thehindu.com/news/"
                 width="900px"
                 height="600px"
                 aria-label="tew"
