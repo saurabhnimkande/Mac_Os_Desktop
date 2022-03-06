@@ -1,5 +1,38 @@
+import { useEffect, useState } from "react";
 import "./Navbar.css";
 export const Navbar = () => {
+  function getDate() {
+    let value = new Date();
+    let generalData = Date().toLocaleString().split(" ");
+    let str =
+      generalData[0] +
+      " " +
+      generalData[1] +
+      " " +
+      generalData[2] +
+      " " +
+      value.getHours() +
+      ":" +
+      value.getMinutes();
+
+    setDate(str);
+  }
+
+  const [date, setDate] = useState(null);
+
+  useEffect(() => {
+    getDate();
+  }, []);
+
+  useEffect(() => {
+    let time = setInterval(() => {
+      getDate();
+    }, 1000 * 60);
+    return () => {
+      clearInterval(time);
+    };
+  }, []);
+
   return (
     <div id="navbarDiv">
       <div>
@@ -39,7 +72,7 @@ export const Navbar = () => {
           <img src="icons/search.png" alt="apple_logo"></img>
         </div>
         <div>
-          <p>{Date().toLocaleString()}</p>
+          <p>{date}</p>
         </div>
       </div>
     </div>
